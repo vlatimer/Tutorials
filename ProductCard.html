@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Product Card Slider</title>
+  <link rel="stylesheet" href="./styles2.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <a id="next" class="friuts" href="./index.html"><img src="./next.png" alt="next"></a>
+  <a id="next" href="#"><img src="./next.png" alt="next"></a>
+  <div class="container">
+    <ul class="thumb">
+      <li onmouseover="changeImageSrc('banana.png')"><img src="banana.png"></li>
+      <li onmouseover="changeImageSrc('cocos1.png')"><img src="cocos1.png"></li>
+      <li onmouseover="changeImageSrc('apple.png')"><img src="apple.png"></li>
+    </ul>
+    <div class="imgBox">
+      <h2>Health Friuts</h2>
+      <img src="apple.png" class="friuts">
+      <ul class="weight">
+        <span>Weight</span>
+        <li>12</li>
+        <li>10</li>
+        <li>7</li>
+        <li>5</li>
+      </ul>
+      <a href="#" class="btn">Add To Cart</a>
+    </div>
+  </div>
+  <script>
+    function changeImageSrc(anything) {
+      document.querySelector('.friuts').src = anything;
+    }
+  </script>
+</body>
+
+</html>
